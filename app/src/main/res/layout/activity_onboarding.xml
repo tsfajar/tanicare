@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Bagian gambar yang memanfaatkan berat layout untuk proporsi -->
+
+    <!-- Container untuk teks dan tombol dengan latar belakang sudut melengkung -->
+    <ImageView
+        android:id="@+id/onboardingImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/onboarding_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome To TaniCare"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:text="Discover the best events in Surabaya. From concerts to festivals, we’ve got it all!"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Daftar"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="12dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+</LinearLayout>
